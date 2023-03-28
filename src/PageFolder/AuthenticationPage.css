@@ -1,0 +1,63 @@
+.mainDiv{
+    width: 100vw;
+    height: 100vh;
+}
+body{
+    background-color: rgb(12, 12, 60);
+}
+#form{
+    width: 350px;
+    height: 400px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 106, 0.487);
+    margin-left: 40%;
+    margin-top: 10%;
+    border: 1px solid  rgba(0, 0, 106, 0.487);
+    border-radius: 20px;
+    box-shadow: 1em 1em 1em 1em;
+}
+h1{
+    margin-left: 5%;
+    color: rgba(183, 182, 182, 0.392);
+}
+input{
+    width: 300px;
+    height: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    outline: none;
+    background-color:rgba(0, 0, 106, 0.487);
+    color: aqua;
+    border-bottom: 2px solid rgb(4, 110, 160);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+button{
+    width: 300px;
+    height: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 20px;
+    background-color: rgb(4, 110, 160);
+    border: 0px;
+}
+button:hover{
+    box-shadow: 1em 1em 3em 0em  rgb(4, 110, 160);
+}
+p{
+    width: 300px;
+    margin-left: 35%;
+    color: gray;
+}
+a{
+    margin-left: 40%;
+    color: white;
+    height: 20px;
+    text-decoration: none;
+}
+a:hover{
+   color: rgb(4, 110, 160);
+}

@@ -1,0 +1,11 @@
+.mainStyle{
+    background-color: rgb(12, 12, 60);
+    width: 100vw;
+    height: 100vh;
+}
+#h1Text{
+    color: white;
+    margin-left: 25%;
+    margin-top: 5%;
+    font-size: 50px;
+}
