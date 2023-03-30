@@ -1,15 +1,13 @@
 ﻿using System;
-namespace ChatGPT_Manager.Model
+using System.Collections.Generic;
+
+namespace ChatGPT_Manager
 {
-	public class Register
-	{
-        public int Id { get; private set; }
-
+    public partial class Register
+    {
+        public int Id { get; set; }
         public string UserName { get; set; } = null!;
-
         public string Password { get; set; } = null!;
-
         public string Email { get; set; } = null!;
-	}
+    }
 }
-

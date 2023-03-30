@@ -80,7 +80,7 @@ namespace ChatGPT_Manager.AWS
 
         public async Task<string> GetTextfromAudio(IFormFile file,string namebucket)
         {
-            return this.helper.TranscribeMediaFile(file).ToString();
+            return await this.helper.TranscribeMediaFile(file);
         }
        
 	}

@@ -18,7 +18,7 @@ namespace ChatGPT_Manager.GPT
             _stringBuilder = new StringBuilder();
             _openAIService = new OpenAIService(new OpenAiOptions()
             {
-                ApiKey = "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"
+                ApiKey = "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"
             });
         }
         public async Task<string> SendQwery(string msg)
@@ -27,7 +27,6 @@ namespace ChatGPT_Manager.GPT
             {
                 Model = Models.ChatGpt3_5Turbo,
                 Temperature = 0.7F,
-                MaxTokens = 100,
                 Messages = new List<ChatMessage>
                 {
                     new ChatMessage("user",msg)

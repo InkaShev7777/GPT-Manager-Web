@@ -61,7 +61,7 @@ namespace ChatGPT_Manager.AWS
                 GetTranscriptionJobResponse getJobResponse;
                 do
                 {
-                    Thread.Sleep(15 * 1000);
+                    Thread.Sleep(1000);
                     getJobResponse = await _client.GetTranscriptionJobAsync(getJobRequest);
                 } while (getJobResponse.TranscriptionJob.TranscriptionJobStatus == "IN_PROGRESS");
 

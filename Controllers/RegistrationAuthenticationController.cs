@@ -2,7 +2,8 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using ChatGPT_Manager.Model;
+//using ChatGPT_Manager.Model;
+//using ChatGPT_Manager.
 using ChatGPT_Manager.Roles;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -11,15 +12,15 @@ using Microsoft.Win32;
 
 namespace ChatGPT_Manager.Controllers
 {
-	[ApiController]
-	[Route("api/controller")]
-	public class RegistrationAuthenticationController : ControllerBase
-	{
+    [ApiController]
+    [Route("api/controller")]
+    public class RegistrationAuthenticationController : ControllerBase
+    {
         private readonly RoleManager<IdentityRole> rolemanager;
         private readonly UserManager<IdentityUser> userManager;
         private readonly IConfiguration configuration;
         public RegistrationAuthenticationController(RoleManager<IdentityRole> _rolemanager, UserManager<IdentityUser> _userManager, IConfiguration _configuration)
-		{
+        {
             this.rolemanager = _rolemanager;
             this.userManager = _userManager;
             this.configuration = _configuration;
@@ -97,7 +98,8 @@ namespace ChatGPT_Manager.Controllers
                 return Ok(new
                 {
                     Token = new JwtSecurityTokenHandler().WriteToken(token),
-                    expiration = token.ValidTo
+                    expiration = token.ValidTo,
+                    user.Id
                 });
             }
             return Unauthorized();

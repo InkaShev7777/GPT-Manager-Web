@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using ChatGPT_Manager.Model;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -19,13 +18,23 @@ namespace ChatGPT_Manager
         {
         }
 
-        public virtual DbSet<SubList> SubLists { get; set; } = null!;
+        //public virtual DbSet<AspNetRole> AspNetRoles { get; set; } = null!;
+        //public virtual DbSet<AspNetRoleClaim> AspNetRoleClaims { get; set; } = null!;
+        //public virtual DbSet<AspNetUser> AspNetUsers { get; set; } = null!;
+        //public virtual DbSet<AspNetUserClaim> AspNetUserClaims { get; set; } = null!;
+        //public virtual DbSet<AspNetUserLogin> AspNetUserLogins { get; set; } = null!;
+        //public virtual DbSet<AspNetUserToken> AspNetUserTokens { get; set; } = null!;
+        public virtual DbSet<HistoryRequest> HistoryRequest { get; set; } = null!;
         public virtual DbSet<Login> Logins { get; set; } = null!;
         public virtual DbSet<Register> Registers { get; set; } = null!;
+        public virtual DbSet<SubList> SubLists { get; set; } = null!;
+        public virtual DbSet<SubUser> SubUsers { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
         }
+
+
     }
 }
