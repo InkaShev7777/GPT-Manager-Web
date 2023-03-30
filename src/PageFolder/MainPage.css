@@ -21,6 +21,7 @@ body{
     height: 85vh;
     border: 1px solid gray;
     border-radius: 15px;
+    overflow: scroll;
 }
 .iconUser{
     width: 50px;
@@ -30,4 +31,11 @@ body{
 .divQiery{
     display: flex;
     flex-wrap: wrap;
+}
+.dontView{
+    display: none;
+}
+#reco{
+    width: 50px;
+    height: 50px;
 }

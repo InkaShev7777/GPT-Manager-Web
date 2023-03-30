@@ -5,6 +5,7 @@ import Authentication from './PageFolder/AuthenticationPage';
 import Registration from './PageFolder/RegistrationForm';
 import SubPage from './PageFolder/SubPage';
 import MainPage from './PageFolder/MainPage';
+import HistoryPage from './PageFolder/HistoryPage';
 function App() {
   return (
     <BrowserRouter>
@@ -14,6 +15,7 @@ function App() {
         <Route path='/registration' element={<Registration/>}></Route>
         <Route path='/subpage' element={<SubPage/>}></Route>
         <Route path='/mainpage' element={<MainPage/>}></Route>
+        <Route path='/historypage' element={<HistoryPage/>}></Route>
       </Routes>
     </BrowserRouter>
   );
